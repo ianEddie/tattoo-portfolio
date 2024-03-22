@@ -1,0 +1,54 @@
+---
+
+---
+
+<section class='h-screen flex justify-center items-center relative'>
+  <h1 class='font-title z-10 flex flex-col text-center'>
+    <span class='text-white text-[5.5em]'>Ian Eddie</span>
+    <span class='text-yellow-400/80 text-[3em]'>Tattoo</span>
+  </h1>
+  <picture class=''>
+    <img
+      src='../../public/images/bg-hero.jpg'
+      alt=''
+      class='h-full w-full object-cover absolute top-0 right-0 -z-0'
+    />
+  </picture>
+</section>
+<style>
+  img {
+    mask-image: linear-gradient(to bottom, black 5%, transparent 95%);
+    filter: grayscale(40%) brightness(0.4);
+  }
+  img {
+    animation: parallax linear both;
+    animation-timeline: scroll();
+    animation-range: 20vh 100vh;
+  }
+
+  h1 {
+    animation: mover linear both;
+    animation-timeline: scroll();
+    animation-range: 0% 80%;
+  }
+
+  @keyframes mover {
+    to {
+      translate: 0 -800px;
+      scale: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes parallax {
+    from {
+      opacity: 1;
+      height: 100vh;
+    }
+    to {
+      opacity: 0;
+      height: 0vh;
+      font-size: 2em;
+    }
+  }
+</style>

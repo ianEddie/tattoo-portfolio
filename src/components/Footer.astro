@@ -1,0 +1,29 @@
+---
+import { footerIcons } from '../lib/footer-icons-data.astro'
+import LocationIcon from '@/icons/location-icon.astro'
+---
+
+<footer
+  class='w-full flex flex-col items-center pb-10 gap-y-10 text-neutral-300'
+>
+  <div
+    class='w-[80%] h-1 bg-gradient-to-r from-transparent via-red-700/10 to-transparent'
+  >
+    <span class='text-transparent'>.</span>
+  </div>
+  <h3 class='font-title text-sub'>Ian Eddie Tattoo</h3>
+  <nav class='flex gap-x-5'>
+    {
+      footerIcons.map((item) => (
+        <a href={item.href}>
+          <item.icon />
+        </a>
+      ))
+    }
+  </nav>
+
+  <a href='' class='flex gap-x-1 items-center font-medium'>
+    <LocationIcon />
+    <span>Hugues 1009, Moreno - Buenos Aires</span>
+  </a>
+</footer>
