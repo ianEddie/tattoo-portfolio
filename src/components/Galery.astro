@@ -1,5 +1,5 @@
 ---
-import { data } from '@/lib/galery-data.ts'
+import { data } from '@/lib/galery-data'
 ---
 
 <section
@@ -10,14 +10,15 @@ import { data } from '@/lib/galery-data.ts'
     {
       data.map(({ image }) => (
         <picture class='h-[450px] w-auto aspect-[9/16]'>
-          <img src={image} class='object-cover rounded-[1.5em]' />
+          <img src={image} class='object-cover rounded-[0.8em]' />
         </picture>
       ))
     }
   </article>
 </section>
 <style>
-  img, h1 {
+  img,
+  h1 {
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 40%;
@@ -35,5 +36,8 @@ import { data } from '@/lib/galery-data.ts'
       scale: 1;
       translate: 0 0;
     }
+  }
+  img {
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
   }
 </style>
