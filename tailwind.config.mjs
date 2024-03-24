@@ -5,7 +5,8 @@ export default {
     extend: {
       fontFamily: {
         title: ['Lordish-Regular'],
-        subtitle: ['Magnificent']
+        subtitle: ['Magnificent'],
+        text: ['Wix Madefor Display Variable']
       },
       fontSize: {
         sub: '3em'

@@ -11,6 +11,12 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.4.1)(tailwindcss@3.4.1)
+  '@fontsource-variable/urbanist':
+    specifier: ^5.0.20
+    version: 5.0.20
+  '@fontsource-variable/wix-madefor-display':
+    specifier: ^5.0.5
+    version: 5.0.5
   astro:
     specifier: ^4.4.1
     version: 4.4.1(typescript@5.3.3)
@@ -600,6 +606,14 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/urbanist@5.0.20:
+    resolution: {integrity: sha512-4R0UW4wfxVMIjXt6L8/7ys4S8ufJvMnVikVeR2WkGe7E/TJeurh6ZFdaRgcfDvjEoyIzhv2n0DIJ0fNO+XaT0w==}
+    dev: false
+
+  /@fontsource-variable/wix-madefor-display@5.0.5:
+    resolution: {integrity: sha512-KejZ05YOPvxuVOpBotrjhK0eS1O1RiWc5jXnpSyNxDTs9Cza4yb3oD70Kw5axwcy+uiNsViHRymBICi0JiklFw==}
+    dev: false
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
