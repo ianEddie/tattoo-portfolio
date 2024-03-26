@@ -6,7 +6,7 @@ export default {
       fontFamily: {
         title: ['Lordish-Regular'],
         subtitle: ['Magnificent'],
-        text: ['Wix Madefor Display Variable']
+        text: ['Ranade-Light']
       },
       fontSize: {
         sub: '3em'
